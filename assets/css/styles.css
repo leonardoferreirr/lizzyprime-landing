@@ -26,9 +26,16 @@
   --muted:#93AAC0;           /* azul-aço */
   --line:rgba(238,241,236,.14);
 
-  --gold:#84754e;            /* dourado da marca */
-  --gold-bright:#9c8a5b;      /* CTA hover / brilho */
+  --gold:#84754e;            /* dourado da marca (acentos) */
+  --gold-bright:#9c8a5b;
   --gold-soft:#bab58a;        /* areia — acento claro */
+
+  /* verde dos botões (pedido do cliente) */
+  --green:#12934A;           /* esmeralda — CTAs */
+  --green-bright:#17AD57;
+  --green-dark:#0C7D3E;
+  --wa:#25D366;              /* verde WhatsApp */
+  --wa-dark:#1EBE5B;
 
   /* seções claras */
   --paper:#F4F1E9;           /* off-white quente */
@@ -98,16 +105,19 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;line-height:1.05;let
 }
 .btn--sm{--bh:44px;font-size:.85rem;padding:0 1.15rem}
 .btn--block{width:100%}
-.btn--gold{background:var(--gold);color:#fff;box-shadow:0 10px 30px -12px rgba(132,117,78,.7)}
-.btn--gold:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(132,117,78,.85)}
-.btn--dark{background:var(--navy);color:#fff}
-.btn--dark:hover{background:var(--navy-2);transform:translateY(-2px)}
+.btn--gold{background:var(--green);color:#fff;box-shadow:0 10px 30px -12px rgba(18,147,74,.6)}
+.btn--gold:hover{background:var(--green-bright);transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(18,147,74,.8)}
+.btn--dark{background:var(--green);color:#fff}
+.btn--dark:hover{background:var(--green-dark);transform:translateY(-2px)}
 .btn--ghost{border-color:var(--line);color:var(--fg);background:transparent}
 .btn--ghost:hover{border-color:var(--fg);background:rgba(238,241,236,.06);transform:translateY(-2px)}
 .section--paper .btn--ghost{border-color:var(--line-ink);color:var(--ink)}
 .section--paper .btn--ghost:hover{border-color:var(--ink)}
-.btn--wa{background:#25D366;color:#fff;box-shadow:0 10px 30px -14px rgba(37,211,102,.6)}
-.btn--wa:hover{background:#1EBE5B;transform:translateY(-2px)}
+.btn--wa{background:var(--wa);color:#fff;box-shadow:0 10px 30px -14px rgba(37,211,102,.6)}
+.btn--wa:hover{background:var(--wa-dark);transform:translateY(-2px)}
+/* botões de WhatsApp: verde WhatsApp (sobrepõe ghost/solid) */
+.btn[data-wa]{background:var(--wa);color:#fff;border-color:transparent;box-shadow:0 10px 30px -14px rgba(37,211,102,.6)}
+.btn[data-wa]:hover{background:var(--wa-dark);border-color:transparent;transform:translateY(-2px)}
 .ico-wa{flex:none}
 
 /* ============================================================
@@ -146,7 +156,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;line-height:1.05;let
 .mobile-menu.is-open{opacity:1;visibility:visible}
 .mobile-menu__nav{display:flex;flex-direction:column;gap:.4rem;text-align:center}
 .mobile-menu__nav a{font-family:var(--font-display);font-size:1.9rem;font-weight:700;padding:.4rem;color:var(--fg)}
-.mobile-menu__cta{color:var(--gold-soft)!important;margin-top:1rem}
+.mobile-menu__cta{color:var(--green-bright)!important;margin-top:1rem}
 
 /* ============================================================
    HERO
