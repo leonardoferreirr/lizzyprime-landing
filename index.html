@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lizzy Prime — Consórcio sem juros: seu sonho com data pra começar</title>
+<meta name="description" content="Do primeiro imóvel ao próximo carro, realize seu sonho com consórcio: sem juros, sem entrada e no seu ritmo. Simulação gratuita em 2 minutos com a Lizzy Prime Financial." />
+<meta name="theme-color" content="#003258" />
+<link rel="icon" type="image/png" href="assets/logo/favicon-64.png" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lizzyprime-landing.vercel.app/" />
+<meta property="og:title" content="Lizzy Prime — Seu sonho já pode ter data pra começar" />
+<meta property="og:description" content="Consórcio sem juros, sem entrada e no seu ritmo. Do primeiro imóvel ao próximo carro. Simulação gratuita em 2 minutos." />
+<meta property="og:image" content="https://lizzyprime-landing.vercel.app/assets/renders/hero-1440.webp" />
+<meta property="og:locale" content="pt_BR" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/figtree-800-latin.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/figtree-400-latin.woff2" crossorigin />
+<link rel="stylesheet" href="assets/css/styles.css?v=20260712" />
+<script>
+  /* ativa modo animado cedo (evita flash) + watchdog: se o motor JS não sinalizar em 3s, revela tudo */
+  (function(){var d=document.documentElement;d.classList.add('js');window.__lzReady=false;
+   setTimeout(function(){if(!window.__lzReady)d.classList.remove('js');},3000);})();
+</script>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader" data-header>
+  <div class="shell header__inner">
+    <a class="header__logo" href="#top" aria-label="Lizzy Prime Financial — início">
+      <img class="header__logo-light" src="assets/logo/lizzy-white.png" alt="Lizzy Prime Financial" width="150" height="45" />
+      <img class="header__logo-dark" src="assets/logo/lizzy-navy.png" alt="Lizzy Prime Financial" width="150" height="45" />
+    </a>
+    <nav class="header__nav" aria-label="Navegação principal">
+      <a href="#sonhos" data-nav>Seu sonho</a>
+      <a href="#contemplada" data-nav>Carta contemplada</a>
+      <a href="#comparativo" data-nav>Por que consórcio</a>
+      <a href="#faq" data-nav>Dúvidas</a>
+    </nav>
+    <div class="header__actions">
+      <a class="btn btn--wa btn--sm" href="https://wa.me/5511911913845?text=Ol%C3%A1%2C%20quero%20simular%20meu%20cons%C3%B3rcio%20na%20Lizzy%20Prime." target="_blank" rel="noopener" data-wa>
+        <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.9-2-1c-.3-.1-.5-.2-.6.1c-.2.3-.7 1-.9 1.1c-.2.2-.3.2-.6.1c-.3-.2-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2c-.2-.3 0-.5.1-.6c.1-.1.3-.3.4-.5c.1-.2.2-.3.3-.5c.1-.2 0-.4 0-.5c-.1-.2-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3c-.2.3-.9.9-.9 2.2c0 1.3.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9c.6.3 1.1.4 1.5.5c.6.2 1.2.2 1.6.1c.5-.1 1.7-.7 1.9-1.3c.2-.7.2-1.2.2-1.3c-.1-.1-.3-.2-.5-.3M12 21.5a9.5 9.5 0 0 1-4.8-1.3l-.3-.2l-3.6.9l1-3.5l-.2-.4A9.5 9.5 0 1 1 12 21.5m0-21A11.5 11.5 0 0 0 2 18l-1.5 5.5L6 22a11.5 11.5 0 1 0 6-21.5"/></svg>
+        WhatsApp
+      </a>
+      <a class="btn btn--gold btn--sm" href="#contato" data-cta>Simular meu sonho</a>
+    </div>
+    <button class="header__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="header__progress" id="scrollProgress" aria-hidden="true"></div>
+</header>
+
+<!-- menu mobile -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav class="mobile-menu__nav">
+    <a href="#sonhos" data-nav-m>Seu sonho</a>
+    <a href="#contemplada" data-nav-m>Carta contemplada</a>
+    <a href="#comparativo" data-nav-m>Por que consórcio</a>
+    <a href="#faq" data-nav-m>Dúvidas</a>
+    <a href="#contato" data-nav-m class="mobile-menu__cta">Simular meu sonho</a>
+  </nav>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero" data-scene>
+    <div class="hero__media" data-hero-media>
+      <img src="assets/renders/hero-1440.webp" srcset="assets/renders/hero-mobile.webp 1120w, assets/renders/hero-1440.webp 1440w, assets/renders/hero-2560.webp 2560w" sizes="100vw" alt="Casa moderna de alto padrão ao entardecer, o sonho realizado com planejamento" fetchpriority="high" decoding="async" width="2560" height="1429" />
+      <div class="hero__scrim"></div>
+    </div>
+
+    <div class="shell hero__inner">
+      <h1 class="hero__title">
+        <span class="line" data-hero-line><span>Todo sonho grande</span></span>
+        <span class="line" data-hero-line><span>começa com um</span></span>
+        <span class="line" data-hero-line><span>plano <em>bem feito</em>.</span></span>
+      </h1>
+      <p class="hero__sub" data-hero-fade>
+        Do seu primeiro imóvel ao próximo carro, existe um jeito de chegar lá
+        sem juros, no seu tempo e do seu jeito.
+      </p>
+      <ul class="hero__seals" data-hero-fade aria-label="Vantagens do consórcio">
+        <li>Sem juros</li>
+        <li>Sem entrada</li>
+        <li>No seu ritmo</li>
+      </ul>
+      <div class="hero__cta" data-hero-fade>
+        <a class="btn btn--gold" href="#contato" data-cta>Quero dar o primeiro passo</a>
+        <a class="btn btn--ghost" href="https://wa.me/5511911913845?text=Ol%C3%A1%2C%20quero%20simular%20meu%20cons%C3%B3rcio%20na%20Lizzy%20Prime." target="_blank" rel="noopener" data-wa>Falar no WhatsApp</a>
+      </div>
+      <p class="hero__micro" data-hero-fade>Simulação gratuita. Leva 2 minutos pra ver seu sonho com data pra começar.</p>
+    </div>
+
+    <a class="hero__scroll" href="#prova" aria-label="Rolar para a próxima seção" data-hero-fade>
+      <span>Explorar</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ============ PROVA SOCIAL ============ -->
+  <section class="section section--deep prova" id="prova" data-scene>
+    <div class="shell">
+      <h2 class="prova__title" data-reveal>Projetos concluídos com excelência</h2>
+      <div class="prova__grid">
+        <div class="prova__stat" data-reveal>
+          <span class="prova__label">Sonhos</span>
+          <span class="prova__num"><span data-count="965">965</span>+</span>
+          <span class="prova__desc">materializados com sucesso.</span>
+        </div>
+        <div class="prova__stat" data-reveal>
+          <span class="prova__label">Patrimônios</span>
+          <span class="prova__num">R$ <span data-count="50">50</span>mi</span>
+          <span class="prova__desc">em reais sendo administrados.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUAL SONHO É O SEU (3 segmentos) ============ -->
+  <section class="section section--paper sonhos" id="sonhos" data-scene>
+    <div class="shell">
+      <div class="sonhos__head">
+        <h2 class="h-display" data-reveal>Qual sonho é o seu?</h2>
+        <p data-reveal>Cada conquista tem o seu caminho. Escolha por onde a sua história começa.</p>
+      </div>
+      <div class="sonhos__grid">
+        <article class="scard" data-reveal>
+          <a class="scard__media" href="#contato" data-cta data-sonho="Crescer patrimônio" aria-label="Quero crescer meu patrimônio">
+            <img src="assets/renders/patrimonio.webp" alt="Torres residenciais modernas ao entardecer, patrimônio construído com planejamento" loading="lazy" width="800" height="600" />
+          </a>
+          <div class="scard__body">
+            <h3 class="scard__title">Pense grande. Seu patrimônio também merece um plano.</h3>
+            <p class="scard__text">Use o consórcio como estratégia pra crescer de verdade: compre imóveis com planejamento, negocie à vista com uma carta contemplada e dê passos maiores na sua vida financeira.</p>
+            <a class="btn btn--dark btn--sm" href="#contato" data-cta data-sonho="Crescer patrimônio">Quero crescer</a>
+          </div>
+        </article>
+        <article class="scard" data-reveal>
+          <a class="scard__media" href="#contato" data-cta data-sonho="Casa própria" aria-label="Quero minha casa">
+            <img src="assets/renders/casa.webp" alt="Família feliz na frente da casa nova, a casa própria conquistada" loading="lazy" width="800" height="600" />
+          </a>
+          <div class="scard__body">
+            <h3 class="scard__title">Aquela casa que você já visitou mil vezes na cabeça.</h3>
+            <p class="scard__text">Sem entrada, sem juros e no seu tempo: planeje a conquista da sua casa própria com a liberdade de negociar como se estivesse pagando à vista.</p>
+            <a class="btn btn--dark btn--sm" href="#contato" data-cta data-sonho="Casa própria">Quero minha casa</a>
+          </div>
+        </article>
+        <article class="scard" data-reveal>
+          <a class="scard__media" href="#contato" data-cta data-sonho="Carro novo" aria-label="Quero meu carro novo">
+            <img src="assets/renders/carro.webp" alt="Carro novo premium ao entardecer, o próximo passo da sua história" loading="lazy" width="800" height="600" />
+          </a>
+          <div class="scard__body">
+            <h3 class="scard__title">Do carro do ano ao elétrico: o próximo passo é seu.</h3>
+            <p class="scard__text">Troque de carro sem juros, com parcelas que cabem na sua vida e no seu momento, porque cada conquista pede o carro certo pra ela.</p>
+            <a class="btn btn--dark btn--sm" href="#contato" data-cta data-sonho="Carro novo">Quero meu carro novo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARTA CONTEMPLADA ============ -->
+  <section class="section section--deep contemplada" id="contemplada" data-scene>
+    <div class="shell contemplada__inner">
+      <figure class="contemplada__media" data-reveal-mask>
+        <img src="assets/renders/carta.webp" alt="Mãos segurando as chaves da conquista, carta contemplada" loading="lazy" width="1100" height="825" />
+      </figure>
+      <div class="contemplada__body">
+        <h2 class="h-display" data-reveal>Não quer esperar a sua vez?</h2>
+        <p data-reveal>Adquira uma carta já contemplada e leve seu crédito pra tirar o sonho do papel agora, sem passar pela fila do sorteio ou do lance, com toda a segurança de um consórcio regulamentado.</p>
+        <a class="btn btn--gold" href="#contato" data-cta data-sonho="Carta contemplada" data-reveal>Quero meu crédito agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPARATIVO ============ -->
+  <section class="section section--paper comparativo" id="comparativo" data-scene>
+    <div class="shell">
+      <div class="comparativo__head">
+        <h2 class="h-display" data-reveal>Por que vale a pena esperar<br />um pouco pra sonhar sem juros.</h2>
+        <p data-reveal>Compare os três caminhos e veja por que o consórcio é o plano mais inteligente pra chegar lá.</p>
+      </div>
+      <div class="comparativo__grid" role="table" aria-label="Comparativo entre financiamento, à vista e consórcio">
+        <div class="cmp cmp--head" role="row" aria-hidden="true">
+          <span class="cmp__c cmp__c--label" role="columnheader"></span>
+          <span class="cmp__c" role="columnheader">O que você ganha</span>
+          <span class="cmp__c" role="columnheader">O que exige de você</span>
+        </div>
+        <div class="cmp" role="row" data-reveal>
+          <span class="cmp__c cmp__c--label" role="rowheader">Financiamento</span>
+          <span class="cmp__c" data-th="O que você ganha">O bem na mão, hoje mesmo.</span>
+          <span class="cmp__c" data-th="O que exige de você">Anos pagando juros que podem quase dobrar o valor do seu sonho.</span>
+        </div>
+        <div class="cmp" role="row" data-reveal>
+          <span class="cmp__c cmp__c--label" role="rowheader">À vista</span>
+          <span class="cmp__c" data-th="O que você ganha">Sem juros, com desconto e poder de negociação.</span>
+          <span class="cmp__c" data-th="O que exige de você">Ter 100% do valor guardado agora, nem sempre cabe na vida real.</span>
+        </div>
+        <div class="cmp cmp--win" role="row" data-reveal>
+          <span class="cmp__c cmp__c--label" role="rowheader">Consórcio<span class="cmp__flag">o plano</span></span>
+          <span class="cmp__c" data-th="O que você ganha">Sem juros, parcela do tamanho do seu momento e um plano real pra chegar lá.</span>
+          <span class="cmp__c" data-th="O que exige de você">Um pouco de paciência: a contemplação vem por sorteio ou lance, sem data marcada.</span>
+        </div>
+      </div>
+      <div class="comparativo__foot" data-reveal>
+        <a class="btn btn--gold" href="#contato" data-cta>Escolho sonhar sem juros</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section class="section section--deep depo" id="depoimentos" data-scene>
+    <div class="shell depo__head">
+      <h2 class="h-display" data-reveal>Histórias de quem já<br />realizou com a Lizzy.</h2>
+      <p data-reveal>Pessoas reais, conquistas reais. O próximo nome nessa lista pode ser o seu.</p>
+    </div>
+    <div class="shell depo__grid">
+      <figure class="vcard" data-reveal>
+        <svg class="vcard__mark" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path fill="currentColor" d="M9.5 6C7 6 5 8 5 10.5S7 15 9.5 15c0 0-.4 3-3.5 3v2c5 0 7-4.5 7-9 0-3-1.5-5-3.5-5m10 0c-2.5 0-4.5 2-4.5 4.5S17 15 19.5 15c0 0-.4 3-3.5 3v2c5 0 7-4.5 7-9 0-3-1.5-5-3.5-5"/></svg>
+        <div class="vcard__video">
+          <video controls preload="none" playsinline poster="assets/videos/poster-ricardo.webp" width="480" height="640">
+            <source src="assets/videos/ricardo.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <figcaption class="vcard__by">
+          <span class="vcard__name">Ricardo Tarantello</span>
+          <span class="vcard__role">Parceiro de Negócios</span>
+        </figcaption>
+      </figure>
+      <figure class="vcard" data-reveal>
+        <svg class="vcard__mark" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path fill="currentColor" d="M9.5 6C7 6 5 8 5 10.5S7 15 9.5 15c0 0-.4 3-3.5 3v2c5 0 7-4.5 7-9 0-3-1.5-5-3.5-5m10 0c-2.5 0-4.5 2-4.5 4.5S17 15 19.5 15c0 0-.4 3-3.5 3v2c5 0 7-4.5 7-9 0-3-1.5-5-3.5-5"/></svg>
+        <div class="vcard__video">
+          <video controls preload="none" playsinline poster="assets/videos/poster-bianca.webp" width="480" height="640">
+            <source src="assets/videos/bianca.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <figcaption class="vcard__by">
+          <span class="vcard__name">Bianca Camargo</span>
+          <span class="vcard__role">Santos · Cliente</span>
+        </figcaption>
+      </figure>
+      <figure class="vcard" data-reveal>
+        <svg class="vcard__mark" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path fill="currentColor" d="M9.5 6C7 6 5 8 5 10.5S7 15 9.5 15c0 0-.4 3-3.5 3v2c5 0 7-4.5 7-9 0-3-1.5-5-3.5-5m10 0c-2.5 0-4.5 2-4.5 4.5S17 15 19.5 15c0 0-.4 3-3.5 3v2c5 0 7-4.5 7-9 0-3-1.5-5-3.5-5"/></svg>
+        <div class="vcard__video">
+          <video controls preload="none" playsinline poster="assets/videos/poster-anapaula.webp" width="480" height="848">
+            <source src="assets/videos/anapaula.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <figcaption class="vcard__by">
+          <span class="vcard__name">Ana Paula Abi Jaudi</span>
+          <span class="vcard__role">São Paulo · Cliente</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section--paper faq" id="faq" data-scene>
+    <div class="shell faq__inner">
+      <div class="faq__aside">
+        <h2 class="h-display" data-reveal>Tire todas as<br />suas dúvidas.</h2>
+        <p data-reveal>Ainda com uma pergunta na cabeça? Fale com um especialista da Lizzy no WhatsApp.</p>
+        <a class="btn btn--wa" href="https://wa.me/5511911913845?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20cons%C3%B3rcio." target="_blank" rel="noopener" data-wa data-reveal>
+          <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.9-2-1c-.3-.1-.5-.2-.6.1c-.2.3-.7 1-.9 1.1c-.2.2-.3.2-.6.1c-.3-.2-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2c-.2-.3 0-.5.1-.6c.1-.1.3-.3.4-.5c.1-.2.2-.3.3-.5c.1-.2 0-.4 0-.5c-.1-.2-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3c-.2.3-.9.9-.9 2.2c0 1.3.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9c.6.3 1.1.4 1.5.5c.6.2 1.2.2 1.6.1c.5-.1 1.7-.7 1.9-1.3c.2-.7.2-1.2.2-1.3c-.1-.1-.3-.2-.5-.3M12 21.5a9.5 9.5 0 0 1-4.8-1.3l-.3-.2l-3.6.9l1-3.5l-.2-.4A9.5 9.5 0 1 1 12 21.5m0-21A11.5 11.5 0 0 0 2 18l-1.5 5.5L6 22a11.5 11.5 0 1 0 6-21.5"/></svg>
+          Falar com especialista
+        </a>
+      </div>
+      <ul class="faq__list">
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>O que é consórcio?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>Um consórcio é um grupo de pessoas físicas ou jurídicas que se unem para formar uma poupança comum com o objetivo de adquirir bens ou serviços por meio de autofinanciamento.</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>O que é uma carta de crédito?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>A carta de crédito é o documento que representa o valor que o consorciado tem direito a utilizar na compra do bem ou serviço após a contemplação.</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>Para a carta contemplada tem que dar entrada?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>Sim, é necessário dar uma entrada para utilizar uma carta contemplada, pois ela já passou por todo o processo de assembleia e lances.</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>O que é seguro de vida?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>Seguro de vida é um contrato entre o segurado e a seguradora, onde a seguradora paga uma quantia em dinheiro aos beneficiários designados em caso de falecimento do segurado, em troca do pagamento de prêmios.</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>Quais são os tipos de seguro de vida?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>Os tipos mais comuns são o seguro de vida temporário (ou seguro de vida a prazo) e o seguro de vida permanente (incluindo seguro de vida inteira e seguro de vida universal).</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>Quanto custa um seguro de vida?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>O valor é variado de acordo com a cobertura escolhida.</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>O que está coberto pelo plano de saúde?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>Os planos de saúde geralmente cobrem serviços como internações, consultas, pronto-socorro e exames, mas a cobertura específica depende do plano contratado.</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>Como funciona a carência nos planos de saúde?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>A carência nos planos de saúde é o tempo de espera após a contratação antes de poder utilizar certos serviços. As regras variam entre as seguradoras, mas todas obedecem ao prazo mínimo estabelecido pela ANS.</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>Quais são os benefícios de escolher a Lizzy?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>Ao escolher a Lizzy Prime Financial, você conta com um consultor financeiro que acompanha sua projeção financeira anualmente, focando na blindagem e alavancagem patrimonial. Isso traz segurança para sua família e estabelece uma parceria de confiança duradoura.</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>Quais são os requisitos para utilizar os serviços da Lizzy?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>Basta ser cliente e ter uma necessidade financeira que desejamos atender. Nossos consultores estão prontos para entender suas metas e oferecer soluções personalizadas para você.</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>Como faço para iniciar um processo de compra com a Lizzy?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>Simples! Basta entrar em contato conosco e agendar sua primeira consultoria com um de nossos especialistas. Estamos aqui para impulsionar sua jornada financeira rumo ao sucesso.</p></div></li>
+        <li class="faq__item" data-reveal><button class="faq__q" aria-expanded="false"><span>O que é MDRT?</span><span class="faq__ico" aria-hidden="true"></span></button><div class="faq__a"><p>Reconhecimento da elite global em seguros e serviços financeiros. Fundada em 1927, a Million Dollar Round Table é uma associação global e independente dos principais profissionais de seguros de vida e serviços financeiros do mundo.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL / FORM ============ -->
+  <section class="section section--deep contato" id="contato" data-scene>
+    <div class="contato__media" aria-hidden="true">
+      <img src="assets/renders/cta-bg.webp" alt="" loading="lazy" />
+    </div>
+    <div class="shell contato__inner">
+      <div class="contato__copy">
+        <h2 class="h-display" data-reveal>Seu sonho já pode<br />ter data pra começar.</h2>
+        <p data-reveal>Preencha o formulário e receba uma simulação personalizada pro seu momento de vida, sem compromisso.</p>
+        <ul class="contato__seals" data-reveal>
+          <li>Sem juros</li><li>Sem entrada</li><li>No seu ritmo</li>
+        </ul>
+      </div>
+      <form class="contato__form" id="leadForm" novalidate data-reveal>
+        <div class="field">
+          <input type="text" id="nome" name="nome" required autocomplete="name" placeholder=" " />
+          <label for="nome">Nome</label>
+        </div>
+        <div class="field">
+          <input type="tel" id="whats" name="whats" required autocomplete="tel" placeholder=" " />
+          <label for="whats">WhatsApp</label>
+        </div>
+        <div class="field field--select">
+          <select id="sonho" name="sonho" required aria-label="Qual é o seu sonho?">
+            <option value="" selected disabled>Qual é o seu sonho?</option>
+            <option>Casa própria</option>
+            <option>Carro novo</option>
+            <option>Crescer patrimônio</option>
+            <option>Carta contemplada</option>
+            <option>Ainda estou avaliando</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--gold btn--block">Quero realizar meu sonho</button>
+        <p class="contato__note">Simulação gratuita e sem compromisso. Seus dados ficam só com a Lizzy.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- statement de fechamento -->
+  <section class="statement" data-scene aria-hidden="true">
+    <p class="statement__line" data-statement>Seu próximo capítulo começa com um plano.</p>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER (réplica lizzyprime.com.br) ============ -->
+<footer class="footer">
+  <div class="shell footer__top">
+    <a class="footer__logo" href="#top" aria-label="Lizzy Prime Financial">
+      <img src="assets/logo/lizzy-navy.png" alt="Lizzy Prime Financial" width="190" height="57" />
+    </a>
+    <nav class="footer__menu" aria-label="Rodapé">
+      <a href="#top">Home</a>
+      <a href="https://lizzyprime.com.br/sobre-nos/" target="_blank" rel="noopener">Sobre Nós</a>
+      <a href="#contemplada">Carta Contemplada</a>
+      <a href="#faq">FAQs</a>
+      <a href="https://lizzyprime.com.br/trabalhe-conosco/" target="_blank" rel="noopener">Trabalhe Conosco</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+  <div class="shell footer__grid">
+    <div class="footer__unit">
+      <h3>São Paulo</h3>
+      <p>Av. João Carlos da Silva Borges,<br />543, Vila Cruzeiro,<br />São Paulo – SP<br />04726-001</p>
+      <a class="footer__phone" href="tel:+551151834500">11 5183.4500</a>
+    </div>
+    <div class="footer__unit">
+      <h3>São José dos Campos I</h3>
+      <p>Av. Cassiano Ricardo,<br />319 – Loja 10, Jardim Aquarius,<br />São José dos Campos – SP<br />12246-870</p>
+      <a class="footer__phone" href="tel:+551239137124">12 3913.7124</a>
+    </div>
+    <div class="footer__unit">
+      <h3>São José dos Campos II</h3>
+      <p>Av. Dr. Ademar de Barros,<br />186 – Jardim São Dimas,<br />São José dos Campos – SP<br />12245-011</p>
+    </div>
+    <div class="footer__contact">
+      <div class="footer__social" aria-label="Redes sociais">
+        <a href="https://www.instagram.com/lizzyprimefinancial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.1c1.2.1 1.8.2 2.2.4c.6.2 1 .5 1.4.9c.4.4.7.8.9 1.4c.2.4.3 1 .4 2.2c.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2c-.2.6-.5 1-.9 1.4c-.4.4-.8.7-1.4.9c-.4.2-1 .3-2.2.4c-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4c-.6-.2-1-.5-1.4-.9c-.4-.4-.7-.8-.9-1.4c-.2-.4-.3-1-.4-2.2c-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2c.2-.6.5-1 .9-1.4c.4-.4.8-.7 1.4-.9c.4-.2 1-.3 2.2-.4c1.3-.1 1.7-.1 4.9-.1M12 0C8.7 0 8.3 0 7 .1C5.7.1 4.8.3 4.1.6c-.8.3-1.4.7-2.1 1.4C1.3 2.7.9 3.3.6 4.1C.3 4.8.1 5.7.1 7C0 8.3 0 8.7 0 12s0 3.7.1 5c.1 1.3.2 2.2.5 2.9c.3.8.7 1.4 1.4 2.1c.7.7 1.3 1.1 2.1 1.4c.7.3 1.6.5 2.9.5c1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.2-.2 2.9-.5c.8-.3 1.4-.7 2.1-1.4c.7-.7 1.1-1.3 1.4-2.1c.3-.7.5-1.6.5-2.9c.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.2-2.2-.5-2.9c-.3-.8-.7-1.4-1.4-2.1c-.7-.7-1.3-1.1-2.1-1.4c-.7-.3-1.6-.5-2.9-.5C15.7 0 15.3 0 12 0m0 5.8a6.2 6.2 0 100 12.4a6.2 6.2 0 000-12.4m0 10.2a4 4 0 110-8a4 4 0 010 8m6.4-10.5a1.4 1.4 0 11-2.9 0a1.4 1.4 0 012.9 0"/></svg></a>
+        <a href="https://www.linkedin.com/company/lizzyprime/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.7-1.9 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.2M5.3 7.4a2.1 2.1 0 110-4.2a2.1 2.1 0 010 4.2m1.8 13H3.5V9h3.6v11.4M22.2 0H1.8C.8 0 0 .8 0 1.7v20.5c0 1 .8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-.9-.8-1.7-1.8-1.7"/></svg></a>
+        <a href="https://www.facebook.com/lizzyprimefinancial/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.68 4.53-4.68c1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.24h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07"/></svg></a>
+      </div>
+      <a class="footer__email" href="mailto:atendimento@lizzyprime.com.br">atendimento@lizzyprime.com.br</a>
+      <a class="footer__wa" href="https://wa.me/5511911913845" target="_blank" rel="noopener" data-wa>
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.9-2-1c-.3-.1-.5-.2-.6.1c-.2.3-.7 1-.9 1.1c-.2.2-.3.2-.6.1c-.3-.2-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2c-.2-.3 0-.5.1-.6c.1-.1.3-.3.4-.5c.1-.2.2-.3.3-.5c.1-.2 0-.4 0-.5c-.1-.2-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3c-.2.3-.9.9-.9 2.2c0 1.3.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9c.6.3 1.1.4 1.5.5c.6.2 1.2.2 1.6.1c.5-.1 1.7-.7 1.9-1.3c.2-.7.2-1.2.2-1.3c-.1-.1-.3-.2-.5-.3M12 21.5a9.5 9.5 0 0 1-4.8-1.3l-.3-.2l-3.6.9l1-3.5l-.2-.4A9.5 9.5 0 1 1 12 21.5m0-21A11.5 11.5 0 0 0 2 18l-1.5 5.5L6 22a11.5 11.5 0 1 0 6-21.5"/></svg>
+        11 91191.3845
+      </a>
+    </div>
+  </div>
+  <div class="footer__bar shell">
+    <span>Lizzy Prime © 2026. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a class="wa-float" href="https://wa.me/5511911913845?text=Ol%C3%A1%2C%20quero%20simular%20meu%20cons%C3%B3rcio%20na%20Lizzy%20Prime." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" data-wa>
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.9-2-1c-.3-.1-.5-.2-.6.1c-.2.3-.7 1-.9 1.1c-.2.2-.3.2-.6.1c-.3-.2-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2c-.2-.3 0-.5.1-.6c.1-.1.3-.3.4-.5c.1-.2.2-.3.3-.5c.1-.2 0-.4 0-.5c-.1-.2-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3c-.2.3-.9.9-.9 2.2c0 1.3.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9c.6.3 1.1.4 1.5.5c.6.2 1.2.2 1.6.1c.5-.1 1.7-.7 1.9-1.3c.2-.7.2-1.2.2-1.3c-.1-.1-.3-.2-.5-.3M12 21.5a9.5 9.5 0 0 1-4.8-1.3l-.3-.2l-3.6.9l1-3.5l-.2-.4A9.5 9.5 0 1 1 12 21.5m0-21A11.5 11.5 0 0 0 2 18l-1.5 5.5L6 22a11.5 11.5 0 1 0 6-21.5"/></svg>
+</a>
+
+<script src="assets/js/vendor/gsap.min.js" defer></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/vendor/lenis.min.js" defer></script>
+<script src="assets/js/main.js?v=20260712" defer></script>
+</body>
+</html>
