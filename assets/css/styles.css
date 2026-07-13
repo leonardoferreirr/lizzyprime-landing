@@ -192,9 +192,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;line-height:1.05;let
 .contato__inner--center .contato__copy p{margin-inline:auto}
 .contato__inner--center .contato__seals{justify-content:center}
 .contato__inner--center .btn{margin-top:1.6rem}
-.hero__title{font-size:var(--t-hero);max-width:17ch;text-shadow:0 2px 40px rgba(0,15,28,.4)}
-.hero__title .line{display:block;overflow:hidden;padding-bottom:.04em}
-.hero__title .line>span{display:block}
+.hero__title{font-size:clamp(2rem,3.5vw,3.6rem);line-height:1.06;max-width:18ch;text-shadow:0 2px 40px rgba(0,15,28,.4)}
 .hero__title em{font-style:normal;position:relative;color:var(--gold-soft)}
 .hero__title em::after{content:"";position:absolute;left:0;right:0;bottom:.02em;height:.08em;background:var(--gold);transform:scaleX(0);transform-origin:left;animation:underline 1s var(--ease-out) 1.05s forwards}
 @keyframes underline{to{transform:scaleX(1)}}
