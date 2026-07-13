@@ -170,7 +170,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;line-height:1.05;let
 .hero__inner{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,4.5vw,4.5rem);align-items:center;padding-top:clamp(112px,15vh,140px);padding-bottom:clamp(48px,7vh,90px)}
 .hero__copy{align-self:center}
 .hero__panel{position:relative;z-index:2}
-.hero__form{background:rgba(3,18,32,.9);border:1px solid rgba(238,241,236,.22);border-radius:var(--radius-lg);padding:clamp(1.5rem,2.4vw,2.2rem);display:grid;gap:.9rem;backdrop-filter:blur(16px) saturate(1.1);-webkit-backdrop-filter:blur(16px) saturate(1.1);box-shadow:0 40px 100px -36px rgba(0,0,0,.95)}
+.hero__form{background:rgba(3,18,32,.9);border:1px solid rgba(238,241,236,.2);border-radius:var(--radius-lg);padding:clamp(1.5rem,2.4vw,2.2rem);display:grid;gap:.9rem;backdrop-filter:blur(18px) saturate(1.15);-webkit-backdrop-filter:blur(18px) saturate(1.15);box-shadow:0 40px 90px -46px rgba(0,0,0,.95)}
 /* campos e simulador mais definidos sobre o card escuro (visibilidade) */
 .hero__form .field input{background:rgba(0,11,20,.72);border-color:rgba(238,241,236,.24)}
 .hero__form .sim{background:rgba(0,11,20,.6);border-color:rgba(238,241,236,.2)}
@@ -387,7 +387,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;line-height:1.05;let
   .header__burger{display:flex;margin-left:auto}
   .header__actions{display:none}
   .hero{align-items:flex-start}
-  .hero__inner{grid-template-columns:1fr;gap:1.8rem}
+  .hero__inner{grid-template-columns:1fr;gap:1.8rem;padding-top:clamp(140px,20vh,180px)}
   .hero__panel{max-width:540px}
   .sonhos__grid{grid-template-columns:1fr 1fr}
   .contemplada__inner{grid-template-columns:1fr;gap:2rem}
