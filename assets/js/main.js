@@ -189,6 +189,19 @@
 
   var form = document.getElementById('leadForm');
   if (form) {
+    // mini-simulador: atualiza o valor exibido e o preenchimento visual do slider
+    var credito = document.getElementById('credito');
+    var simValue = document.getElementById('simValue');
+    var fmtBRL = function (n) { return 'R$ ' + Number(n).toLocaleString('pt-BR'); };
+    if (credito && simValue) {
+      var updateSim = function () {
+        simValue.textContent = fmtBRL(credito.value);
+        var pct = (credito.value - credito.min) / (credito.max - credito.min) * 100;
+        credito.style.setProperty('--pct', pct + '%');
+      };
+      credito.addEventListener('input', updateSim);
+      updateSim();
+    }
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var ok = true;
@@ -198,15 +211,12 @@
         if (!f.value.trim()) { wrap.classList.add('field--err'); wrap.classList.remove('field--ok'); ok = false; }
         else { wrap.classList.remove('field--err'); wrap.classList.add('field--ok'); }
       });
-      var sonho = document.getElementById('sonho');
-      if (!sonho.value) { sonho.closest('.field').classList.add('field--err'); ok = false; }
-      else { sonho.closest('.field').classList.remove('field--err'); }
       if (!ok) return;
 
       var msg = 'Olá! Quero simular meu consórcio na Lizzy Prime.%0A%0A'
         + 'Nome: ' + encodeURIComponent(document.getElementById('nome').value) + '%0A'
-        + 'WhatsApp: ' + encodeURIComponent(document.getElementById('whats').value) + '%0A'
-        + 'Sonho: ' + encodeURIComponent(sonho.value);
+        + 'Telefone: ' + encodeURIComponent(document.getElementById('whats').value) + '%0A'
+        + 'Valor do crédito: ' + encodeURIComponent(credito ? fmtBRL(credito.value) : '');
       window.open('https://wa.me/5511911913845?text=' + msg, '_blank');
     });
   }

@@ -21,7 +21,7 @@
 
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/figtree-800-latin.woff2" crossorigin />
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/figtree-400-latin.woff2" crossorigin />
-<link rel="stylesheet" href="assets/css/styles.css?v=20260712" />
+<link rel="stylesheet" href="assets/css/styles.css?v=20260713a" />
 <script>
   /* ativa modo animado cedo (evita flash) + watchdog: se o motor JS não sinalizar em 3s, revela tudo */
   (function(){var d=document.documentElement;d.classList.add('js');window.__lzReady=false;
@@ -44,10 +44,6 @@
       <a href="#faq" data-nav>Dúvidas</a>
     </nav>
     <div class="header__actions">
-      <a class="btn btn--wa btn--sm" href="https://wa.me/5511911913845?text=Ol%C3%A1%2C%20quero%20simular%20meu%20cons%C3%B3rcio%20na%20Lizzy%20Prime." target="_blank" rel="noopener" data-wa>
-        <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.9-2-1c-.3-.1-.5-.2-.6.1c-.2.3-.7 1-.9 1.1c-.2.2-.3.2-.6.1c-.3-.2-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2c-.2-.3 0-.5.1-.6c.1-.1.3-.3.4-.5c.1-.2.2-.3.3-.5c.1-.2 0-.4 0-.5c-.1-.2-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3c-.2.3-.9.9-.9 2.2c0 1.3.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9c.6.3 1.1.4 1.5.5c.6.2 1.2.2 1.6.1c.5-.1 1.7-.7 1.9-1.3c.2-.7.2-1.2.2-1.3c-.1-.1-.3-.2-.5-.3M12 21.5a9.5 9.5 0 0 1-4.8-1.3l-.3-.2l-3.6.9l1-3.5l-.2-.4A9.5 9.5 0 1 1 12 21.5m0-21A11.5 11.5 0 0 0 2 18l-1.5 5.5L6 22a11.5 11.5 0 1 0 6-21.5"/></svg>
-        WhatsApp
-      </a>
       <a class="btn btn--gold btn--sm" href="#contato" data-cta>Simular meu sonho</a>
     </div>
     <button class="header__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
@@ -78,25 +74,47 @@
     </div>
 
     <div class="shell hero__inner">
-      <h1 class="hero__title">
-        <span class="line" data-hero-line><span>Todo sonho grande</span></span>
-        <span class="line" data-hero-line><span>começa com um</span></span>
-        <span class="line" data-hero-line><span>plano <em>bem feito</em>.</span></span>
-      </h1>
-      <p class="hero__sub" data-hero-fade>
-        Do seu primeiro imóvel ao próximo carro, existe um jeito de chegar lá
-        sem juros, no seu tempo e do seu jeito.
-      </p>
-      <ul class="hero__seals" data-hero-fade aria-label="Vantagens do consórcio">
-        <li>Sem juros</li>
-        <li>Sem entrada</li>
-        <li>No seu ritmo</li>
-      </ul>
-      <div class="hero__cta" data-hero-fade>
-        <a class="btn btn--gold" href="#contato" data-cta>Quero dar o primeiro passo</a>
-        <a class="btn btn--ghost" href="https://wa.me/5511911913845?text=Ol%C3%A1%2C%20quero%20simular%20meu%20cons%C3%B3rcio%20na%20Lizzy%20Prime." target="_blank" rel="noopener" data-wa>Falar no WhatsApp</a>
+      <div class="hero__copy">
+        <h1 class="hero__title">
+          <span class="line" data-hero-line><span>Todo sonho grande</span></span>
+          <span class="line" data-hero-line><span>começa com um</span></span>
+          <span class="line" data-hero-line><span>plano <em>bem feito</em>.</span></span>
+        </h1>
+        <p class="hero__sub" data-hero-fade>
+          Do seu primeiro imóvel ao próximo carro, existe um jeito de chegar lá
+          sem juros, no seu tempo e do seu jeito.
+        </p>
+        <ul class="hero__seals" data-hero-fade aria-label="Vantagens do consórcio">
+          <li>Sem juros</li>
+          <li>Sem entrada</li>
+          <li>No seu ritmo</li>
+        </ul>
       </div>
-      <p class="hero__micro" data-hero-fade>Simulação gratuita. Leva 2 minutos pra ver seu sonho com data pra começar.</p>
+
+      <div class="hero__panel" id="contato" data-hero-fade>
+        <form class="hero__form" id="leadForm" novalidate>
+          <p class="hero__form-title">Simule o seu sonho</p>
+          <p class="hero__form-sub">Escolha o valor do crédito e receba as condições, sem compromisso.</p>
+          <div class="field">
+            <input type="text" id="nome" name="nome" required autocomplete="name" placeholder=" " />
+            <label for="nome">Nome</label>
+          </div>
+          <div class="field">
+            <input type="tel" id="whats" name="whats" required autocomplete="tel" placeholder=" " />
+            <label for="whats">Telefone</label>
+          </div>
+          <div class="sim">
+            <div class="sim__head">
+              <span class="sim__label">Valor do crédito</span>
+              <span class="sim__value" id="simValue">R$ 150.000</span>
+            </div>
+            <input type="range" id="credito" name="credito" min="30000" max="500000" step="10000" value="150000" class="sim__range" aria-label="Valor do crédito" />
+            <div class="sim__scale"><span>R$ 30 mil</span><span>R$ 500 mil</span></div>
+          </div>
+          <button type="submit" class="btn btn--gold btn--block">Simular meu sonho</button>
+          <p class="hero__form-note">Simulação gratuita. Seus dados ficam só com a Lizzy.</p>
+        </form>
+      </div>
     </div>
 
     <a class="hero__scroll" href="#prova" aria-label="Rolar para a próxima seção" data-hero-fade>
@@ -120,6 +138,21 @@
           <span class="prova__num">R$ <span data-count="50">50</span>mi</span>
           <span class="prova__desc">em reais sendo administrados.</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARTA CONTEMPLADA (destaque) ============ -->
+  <section class="section section--deep contemplada contemplada--highlight" id="contemplada" data-scene>
+    <div class="shell contemplada__inner">
+      <figure class="contemplada__media" data-reveal-mask>
+        <img src="assets/renders/carta.webp" alt="Mãos segurando as chaves da conquista, carta contemplada" loading="lazy" width="1100" height="825" />
+      </figure>
+      <div class="contemplada__body">
+        <span class="contemplada__badge" data-reveal>Crédito imediato</span>
+        <h2 class="h-display" data-reveal>Não quer esperar a sua vez?</h2>
+        <p data-reveal>Adquira uma carta já contemplada e leve seu crédito pra tirar o sonho do papel agora, sem passar pela fila do sorteio ou do lance, com toda a segurança de um consórcio regulamentado.</p>
+        <a class="btn btn--gold" href="#contato" data-cta data-sonho="Carta contemplada" data-reveal>Quero meu crédito agora</a>
       </div>
     </div>
   </section>
@@ -166,25 +199,11 @@
     </div>
   </section>
 
-  <!-- ============ CARTA CONTEMPLADA ============ -->
-  <section class="section section--deep contemplada" id="contemplada" data-scene>
-    <div class="shell contemplada__inner">
-      <figure class="contemplada__media" data-reveal-mask>
-        <img src="assets/renders/carta.webp" alt="Mãos segurando as chaves da conquista, carta contemplada" loading="lazy" width="1100" height="825" />
-      </figure>
-      <div class="contemplada__body">
-        <h2 class="h-display" data-reveal>Não quer esperar a sua vez?</h2>
-        <p data-reveal>Adquira uma carta já contemplada e leve seu crédito pra tirar o sonho do papel agora, sem passar pela fila do sorteio ou do lance, com toda a segurança de um consórcio regulamentado.</p>
-        <a class="btn btn--gold" href="#contato" data-cta data-sonho="Carta contemplada" data-reveal>Quero meu crédito agora</a>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ COMPARATIVO ============ -->
   <section class="section section--paper comparativo" id="comparativo" data-scene>
     <div class="shell">
       <div class="comparativo__head">
-        <h2 class="h-display" data-reveal>Por que vale a pena esperar<br />um pouco pra sonhar sem juros.</h2>
+        <h2 class="h-display" data-reveal>Vale a pena esperar<br />pra sonhar sem juros.</h2>
         <p data-reveal>Compare os três caminhos e veja por que o consórcio é o plano mais inteligente pra chegar lá.</p>
       </div>
       <div class="comparativo__grid" role="table" aria-label="Comparativo entre financiamento, à vista e consórcio">
@@ -218,7 +237,7 @@
   <!-- ============ DEPOIMENTOS ============ -->
   <section class="section section--deep depo" id="depoimentos" data-scene>
     <div class="shell depo__head">
-      <h2 class="h-display" data-reveal>Histórias de quem já<br />realizou com a Lizzy.</h2>
+      <h2 class="h-display" data-reveal>Quem já realizou<br />o sonho com a Lizzy.</h2>
       <p data-reveal>Pessoas reais, conquistas reais. O próximo nome nessa lista pode ser o seu.</p>
     </div>
     <div class="shell depo__grid">
@@ -290,40 +309,19 @@
   </section>
 
   <!-- ============ CTA FINAL / FORM ============ -->
-  <section class="section section--deep contato" id="contato" data-scene>
+  <section class="section section--deep contato" data-scene>
     <div class="contato__media" aria-hidden="true">
       <img src="assets/renders/cta-bg.webp" alt="" loading="lazy" />
     </div>
-    <div class="shell contato__inner">
+    <div class="shell contato__inner contato__inner--center">
       <div class="contato__copy">
         <h2 class="h-display" data-reveal>Seu sonho já pode<br />ter data pra começar.</h2>
-        <p data-reveal>Preencha o formulário e receba uma simulação personalizada pro seu momento de vida, sem compromisso.</p>
+        <p data-reveal>Faça a sua simulação no topo da página e receba as condições pro seu momento de vida, sem compromisso.</p>
         <ul class="contato__seals" data-reveal>
           <li>Sem juros</li><li>Sem entrada</li><li>No seu ritmo</li>
         </ul>
+        <a class="btn btn--gold" href="#contato" data-cta data-reveal>Simular meu sonho</a>
       </div>
-      <form class="contato__form" id="leadForm" novalidate data-reveal>
-        <div class="field">
-          <input type="text" id="nome" name="nome" required autocomplete="name" placeholder=" " />
-          <label for="nome">Nome</label>
-        </div>
-        <div class="field">
-          <input type="tel" id="whats" name="whats" required autocomplete="tel" placeholder=" " />
-          <label for="whats">WhatsApp</label>
-        </div>
-        <div class="field field--select">
-          <select id="sonho" name="sonho" required aria-label="Qual é o seu sonho?">
-            <option value="" selected disabled>Qual é o seu sonho?</option>
-            <option>Casa própria</option>
-            <option>Carro novo</option>
-            <option>Crescer patrimônio</option>
-            <option>Carta contemplada</option>
-            <option>Ainda estou avaliando</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn--gold btn--block">Quero realizar meu sonho</button>
-        <p class="contato__note">Simulação gratuita e sem compromisso. Seus dados ficam só com a Lizzy.</p>
-      </form>
     </div>
   </section>
 
@@ -390,6 +388,6 @@
 <script src="assets/js/vendor/gsap.min.js" defer></script>
 <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
 <script src="assets/js/vendor/lenis.min.js" defer></script>
-<script src="assets/js/main.js?v=20260712" defer></script>
+<script src="assets/js/main.js?v=20260713a" defer></script>
 </body>
 </html>
