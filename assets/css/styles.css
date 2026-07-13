@@ -331,6 +331,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;line-height:1.05;let
    ============================================================ */
 .statement{background:var(--navy);padding-block:clamp(3rem,8vh,6.5rem);overflow:hidden}
 .statement__line{font-family:var(--font-display);font-weight:800;text-align:center;font-size:clamp(1.3rem,3.6vw,2.9rem);letter-spacing:-.02em;color:var(--gold-soft);line-height:1.1;padding-inline:var(--gutter)}
+.stmt-br{display:none}
 
 .footer{background:var(--paper);color:var(--ink);padding-top:clamp(2.6rem,5vw,4rem)}
 .footer__top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1.4rem;padding-bottom:1.8rem;border-bottom:1px solid var(--line-ink)}
@@ -415,6 +416,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;line-height:1.05;let
   .footer__top{flex-direction:column;align-items:flex-start}
   .contato__copy h2{font-size:1.7rem}
   .contato__copy p{font-size:.95rem}
+  .stmt-br{display:inline}
 }
 
 /* reduced motion */
